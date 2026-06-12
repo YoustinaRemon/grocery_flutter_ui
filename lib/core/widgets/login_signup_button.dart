@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/home_screen.dart';
+import 'package:grocery/screens/home/home_screen.dart';
 
 class CustomContainerButton extends StatelessWidget {
   final String text;
