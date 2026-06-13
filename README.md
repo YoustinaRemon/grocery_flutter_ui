@@ -16,12 +16,22 @@ For help getting started with Flutter development, view the
 [online documentation](https://docs.flutter.dev/), which offers tutorials,
 samples, guidance on mobile development, and a full API reference.
 
-## Screenshots
+## Home Screen
 
-<p align="center">
-  <img src="assets/screenshots/Login_Screen.png" width="250">
-  <img src="assets/screenshots/Sign_Up_Screen.png" width="250">
+<p align="start">
   <img src="assets/screenshots/Home_Screen.png" width="250">
+</p>
+
+## Login Screen
+
+<p align="start">
+  <img src="assets/screenshots/Login_Screen.png" width="250">
+</p>
+
+## Sign UP Screen
+
+<p align="start">
+  <img src="assets/screenshots/Sign_Up_Screen.png" width="250">
 </p>
 
 ## Features
