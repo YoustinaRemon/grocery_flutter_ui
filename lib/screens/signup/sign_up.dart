@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/widgets/custom_text_form.dart';
+import 'package:grocery/core/widgets/text_field.dart';
 import 'package:grocery/core/widgets/login_signup_button.dart';
 import 'package:grocery/screens/login/login_screen.dart';
+import '../../core/widgets/header_of_first_screens.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
@@ -17,18 +18,12 @@ class SignUpScreen extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 28),
-                Center(child: Image.asset('assets/images/logo_icon.png')),
-                SizedBox(height: 100),
-                Text(
-                  'Sign Up',
-                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
-                ),
-                SizedBox(height: 15),
 
-                Text(
-                  'Enter your credentials to continue',
-                  style: TextStyle(fontSize: 16, color: Color(0xFF7C7C7C)),
+                HeaderOfFirstScreens(
+                  text1: 'Sign Up',
+                  text2: 'Enter your credentials to continue',
                 ),
+
                 SizedBox(height: 40),
 
                 const CustomTextForm(text: 'Username'),

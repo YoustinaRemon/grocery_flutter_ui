@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import '../../core/widgets/back_arrow.dart';
 import '../../core/widgets/search_field.dart';
-import 'widgets/custom_card.dart';
 import '../../core/constants/app_images.dart';
 import 'widgets/home_header.dart';
-import 'widgets/see_all_line_row.dart';
+import 'widgets/list_view_for_card.dart';
+import 'widgets/see_all_action_row.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -18,46 +19,33 @@ class HomeScreen extends StatelessWidget {
             child: Column(
               children: [
                 SizedBox(height: 28),
-                Align(
-                  alignment: Alignment.topLeft,
-                  child: InkWell(
-                    onTap: () {
-                      Navigator.pop(context);
-                    },
-                    child: Icon(Icons.arrow_back_ios),
-                  ),
-                ),
+                BackArrow(),
                 HomeHeader(),
-
-                SizedBox(height: 20),
-
+                SizedBox(height: 10),
                 CustomSearch(),
                 SizedBox(height: 20),
-                Image.asset(AppImages.banner, width: double.infinity),
-                SeeAllLine(),
-                SizedBox(height: 20),
-
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Expanded(
-                      child: CustomCard(
-                        image: AppImages.banana,
-                        title: 'Organic Bananas',
-                        subtitle: '7pcs, Priceg',
-                        price: '\$4.99',
-                      ),
-                    ),
-                    SizedBox(width: 20),
-                    Expanded(
-                      child: CustomCard(
-                        image: AppImages.apple,
-                        title: 'Red Apple',
-                        subtitle: '1kg, Priceg',
-                        price: '\$4.99',
+                    Icon(Icons.location_on),
+                    Text(
+                      'Dhaka, Banassre',
+                      style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w600,
                       ),
                     ),
                   ],
                 ),
+                SizedBox(height: 20),
+                Image.asset(AppImages.banner, width: double.infinity),
+                SeeAllLine(title: 'Exclusive Offer'),
+                SizedBox(height: 20),
+                ListviewForCard(),
+                SeeAllLine(title: 'Best Selling'),
+                SizedBox(height: 20),
+
+                ListviewForCard(),
               ],
             ),
           ),

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/core/widgets/custom_text_form.dart';
+import 'package:grocery/core/widgets/text_field.dart';
 import 'package:grocery/core/widgets/login_signup_button.dart';
 import 'package:grocery/screens/signup/sign_up.dart';
+import '../../core/widgets/header_of_first_screens.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});
@@ -14,21 +15,13 @@ class LoginScreen extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 25.0),
           child: SingleChildScrollView(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 SizedBox(height: 28),
-                Center(child: Image.asset('assets/images/logo_icon.png')),
-                SizedBox(height: 100),
-                Text(
-                  'Login',
-                  style: TextStyle(fontSize: 26, fontWeight: FontWeight.w600),
+                HeaderOfFirstScreens(
+                  text1: 'Login',
+                  text2: 'Enter your email and password',
                 ),
-                SizedBox(height: 15),
 
-                Text(
-                  'Enter your email and password',
-                  style: TextStyle(fontSize: 16, color: Color(0xFF7C7C7C)),
-                ),
                 SizedBox(height: 40),
                 const CustomTextForm(text: 'Email'),
                 SizedBox(height: 30),
