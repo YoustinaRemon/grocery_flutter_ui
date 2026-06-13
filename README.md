@@ -25,13 +25,13 @@ samples, guidance on mobile development, and a full API reference.
 ## Login Screen
 
 <p align="start">
-  <img src="assets/screenshots/Login_Screen.png" width="250">
+  <img src="assets/screenshots/Login_Screenshoot.png" width="250">
 </p>
 
 ## Sign UP Screen
 
 <p align="start">
-  <img src="assets/screenshots/Sign_Up_Screen.png" width="250">
+  <img src="assets/screenshots/Sign_Up_Screenshoot.png" width="250">
 </p>
 
 ## Features
