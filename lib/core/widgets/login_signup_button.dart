@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:grocery/screens/home/home_screen.dart';
+import 'package:grocery/core/widgets/custom_buttom.dart';
 
 class CustomContainerButton extends StatelessWidget {
   final String text;
@@ -25,24 +26,7 @@ class CustomContainerButton extends StatelessWidget {
               MaterialPageRoute(builder: (context) => HomeScreen()),
             );
           },
-          child: Container(
-            width: double.infinity,
-            height: 67,
-            decoration: BoxDecoration(
-              color: Color(0xFF53B175),
-              borderRadius: BorderRadius.circular(19),
-            ),
-            child: Center(
-              child: Text(
-                text,
-                style: TextStyle(
-                  fontSize: 18,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
-          ),
+          child: CustomButton(text: text),
         ),
 
         Row(

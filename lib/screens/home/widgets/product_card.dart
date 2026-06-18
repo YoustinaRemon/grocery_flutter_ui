@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import '../../../core/constants/product_data.dart';
+import 'product_data.dart';
 
 class ProductCard extends StatelessWidget {
   const ProductCard({super.key, required this.product});
@@ -11,8 +11,8 @@ class ProductCard extends StatelessWidget {
     return Align(
       alignment: Alignment.topLeft,
       child: SizedBox(
-        height: 242,
-        width: 160,
+        height: 245,
+        width: 190,
         child: Container(
           padding: EdgeInsets.all(14),
           decoration: BoxDecoration(
@@ -26,7 +26,7 @@ class ProductCard extends StatelessWidget {
             children: [
               Center(
                 child: SizedBox(
-                  width: 100,
+                  width: 120,
                   height: 80,
                   child: Image.asset(product.image, fit: BoxFit.contain),
                 ),

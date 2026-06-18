@@ -1,3 +1,5 @@
+import '../../../core/constants/app_images.dart';
+
 class Product {
   final String image;
   final String title;
@@ -13,22 +15,28 @@ class Product {
 
   static final List<Product> products = [
     Product(
-      image: 'assets/images/banana.png',
+      image: AppImages.banana,
       title: 'Organic Bananas',
       subtitle: '7pcs, Priceg',
       price: '\$4.99',
     ),
     Product(
-      image: 'assets/images/apple.png',
+      image: AppImages.apple,
       title: 'Red Apple',
       subtitle: '1kg, Priceg',
       price: '\$4.99',
     ),
     Product(
-      image: 'assets/images/white egg.png',
+      image: AppImages.whiteEgg,
       title: 'Egg Chicken White',
       subtitle: '180g, Price',
       price: '\$1.50',
+    ),
+    Product(
+      image: AppImages.ginger,
+      title: 'Ginger',
+      subtitle: '100g, Priceg',
+      price: '\$2.99',
     ),
   ];
 }

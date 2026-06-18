@@ -34,6 +34,12 @@ samples, guidance on mobile development, and a full API reference.
   <img src="assets/screenshots/Sign_Up_Screenshoot.png" width="250">
 </p>
 
+## Product Detail Screen
+
+<p align="start">
+  <img src="assets/screenshots/Product_details_Screenshot.png" width="250">
+</p>
+
 ## Features
 
 - Navigation between screens
