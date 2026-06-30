@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:grocery/screens/home/home_screen.dart';
 import 'package:grocery/core/widgets/custom_buttom.dart';
+
+import '../../screens/bottom_nav_bar/bottom_nav_bar.dart';
 
 class CustomContainerButton extends StatelessWidget {
   final String text;
@@ -23,7 +24,7 @@ class CustomContainerButton extends StatelessWidget {
           onTap: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => HomeScreen()),
+              MaterialPageRoute(builder: (context) => BottomNavBar()),
             );
           },
           child: CustomButton(text: text),

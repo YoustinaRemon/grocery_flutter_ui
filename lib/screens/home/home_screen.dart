@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:grocery/screens/home/widgets/listview_for_groceries.dart';
 import '../../core/widgets/back_arrow.dart';
 import '../../core/widgets/search_field.dart';
 import '../../core/constants/app_images.dart';
@@ -35,11 +36,13 @@ class HomeScreen extends StatelessWidget {
               SizedBox(height: 20),
               Image.asset(AppImages.banner, width: double.infinity),
               SeeAllLine(title: 'Exclusive Offer'),
-              SizedBox(height: 20),
               ListviewProductCard(),
               SeeAllLine(title: 'Best Selling'),
+              ListviewProductCard(),
+              SeeAllLine(title: 'Groceries'),
+              SizedBox(height: 10),
+              ListviewForGroceries(),
               SizedBox(height: 20),
-
               ListviewProductCard(),
             ],
           ),
